@@ -48,7 +48,7 @@ def help_intent_handler(handler_input):
 
     return handler_input.response_builder.speak(speech_text).ask(
         speech_text).set_card(SimpleCard(
-            "Hello World", speech_text)).response
+            "Hello World creator!", speech_text)).response
 
 
 @skill_builder.request_handler(
