@@ -25,7 +25,7 @@ def launch_request_handler(handler_input):
     speech_text = "Move plan is an Alexa skill and is live, you can say hello!"
 
     return handler_input.response_builder.speak(speech_text).set_card(
-        SimpleCard("Hello World creator!", speech_text)).set_should_end_session(
+        SimpleCard("Hello World", speech_text)).set_should_end_session(
         False).response
 
 
@@ -33,7 +33,7 @@ def launch_request_handler(handler_input):
 def hello_world_intent_handler(handler_input):
     # """Handler for Hello World Intent."""
     # type: (HandlerInput) -> Response
-    speech_text = "Hello World!"
+    speech_text = "Hello World creator!"
 
     return handler_input.response_builder.speak(speech_text).set_card(
         SimpleCard("Hello World", speech_text)).set_should_end_session(
